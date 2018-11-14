@@ -70,7 +70,7 @@ public class Person {
 	
 	public String getSSN() {
 		if(SSN == null) return "SSN was not set.";
-		return this.SSN; //implement a security lock sometime
+		return this.SSN; //Returns a raw output of the SSN; Implement a security lock whenever
 	}
 	
 	public int getID() {
