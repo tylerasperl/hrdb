@@ -2,9 +2,9 @@ package units;
 
 public class Benefits {
 	private String benefitName = null;
-	private long benefitID = -1;
+	private int benefitID = -1;
 	
-	public Benefits(String name, long ID) {
+	public Benefits(String name, int ID) {
 		this.benefitName = name;
 		this.benefitID = ID;
 	}
@@ -13,7 +13,7 @@ public class Benefits {
 		this.benefitName = name;
 	}
 	
-	public void setBenefitID(long ID) {
+	public void setBenefitID(int ID) {
 		this.benefitID = ID;
 	}
 	

@@ -5,7 +5,7 @@ public class Person {
 	protected String lastName = null;
 	protected String SSN = null;
 	protected int personalPhoneNumber = 0;
-	protected long ID = -1;
+	protected int ID = -1;
 	protected String personalEmailAddress = null;
 	
 	/**
@@ -22,7 +22,7 @@ public class Person {
 	 * @param SSN A person's SSN number
 	 * @param ID A person's ID number
 	 */
-	public Person(String first, String last, String SSN, long ID) {
+	public Person(String first, String last, String SSN, int ID) {
 		this.firstName = first;
 		this.lastName = last;
 		this.SSN = SSN;
@@ -41,7 +41,7 @@ public class Person {
 		this.SSN = s;
 	}
 	
-	public void setID(long id) {
+	public void setID(int id) {
 		this.ID = id;
 	}
 	
@@ -73,7 +73,7 @@ public class Person {
 		return this.SSN; //implement a security lock sometime
 	}
 	
-	public long getID() {
+	public int getID() {
 		return this.ID;
 	}
 

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  */
 public class Company {
 	private String companyName = null;
-	private long companyID = -1;
+	private int companyID = -1;
 
 	private ArrayList<Employee> companyEmployees = new ArrayList<Employee>();
 	private ArrayList<Department> companyDepartment = new ArrayList<Department>();
@@ -76,7 +76,7 @@ public class Company {
 		this.companyName = name;
 	}
 	
-	public void setCompanyID(long ID) {
+	public void setCompanyID(int ID) {
 		this.companyID = ID;
 	}
 	

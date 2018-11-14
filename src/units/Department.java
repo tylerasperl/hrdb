@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Department {
 	
-	private long departmentID = -1;
+	private int departmentID = -1;
 	private String departmentName = null;
 	
 	private ArrayList<Employee> departmentEmployees = new ArrayList<>();
@@ -13,7 +13,7 @@ public class Department {
 		
 	}
 	
-	public Department(String name, long ID) {
+	public Department(String name, int ID) {
 		this.departmentID = ID;
 		this.departmentName = name;
 	}
@@ -22,7 +22,7 @@ public class Department {
 		this.departmentName = name;
 	}
 	
-	public void setDepartmentID(long ID) {
+	public void setDepartmentID(int ID) {
 		this.departmentID = ID;
 	}
 	
@@ -50,7 +50,7 @@ public class Department {
 		return this.departmentName;
 	}
 	
-	public long getDepartmentID() {
+	public int getDepartmentID() {
 		return this.departmentID;
 	}
 }

@@ -8,7 +8,7 @@ package units;
 public class Employee extends Person{
 	private String employeeFirstName = null;
 	private String employeeLastName = null;
-	private long employeeID = -1; 
+	private int employeeID = -1; 
 	private String employeeSSN = null;
 	private int employeePhoneNumber = 0;
 	private String employeeEmail = null;
@@ -43,7 +43,7 @@ public class Employee extends Person{
 	 * @param person an object of type Person
 	 * @param ID custom ID
 	 */
-	public Employee(Person person, long ID) {
+	public Employee(Person person, int ID) {
 		currentPerson = person;
 		employeeFirstName = person.getFirstName();
 		employeeLastName = person.getLastName();
